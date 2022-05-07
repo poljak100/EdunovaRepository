@@ -1,6 +1,6 @@
-drop database if exists salon;
-create database salon;
-use salon;
+drop database if exists salon za uljepsavanje;
+create database salon za uljepsavanje;
+use salon za uljepsavanje;
 
 create table djelatnik(
     ime varchar(50),
