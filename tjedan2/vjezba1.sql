@@ -1,7 +1,7 @@
-# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\Dino\Desktop\EdunovaRepository\Vjezba2\vjezba3.sql
-drop database if exists vjezba3;
-create database vjezba3 default charset utf8mb4;
-use vjezba3;
+# C:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\Dino\Desktop\EdunovaRepository\tjedan2\vjezba1.sql
+drop database if exists vjezba1;
+create database vjezba1 default charset utf8mb4;
+use vjezba1;
 
 create table rok(
     sifra int not null primary key auto_increment,
