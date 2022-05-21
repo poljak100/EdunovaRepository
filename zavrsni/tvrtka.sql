@@ -15,11 +15,8 @@ create table proizvodi (
     sifra int not null primary key auto_increment,
     naziv_proizvoda varchar(50) not null,
     rok_trajanja datetime ,
-    sirovine varchar(50),
-    ime_proizvoda varchar(50) not null,
     cijena_proizvoda dec,
     proizvodac varchar(50) not null,
-    certifikat boolean,
     poslovnica int not null
 );
 
@@ -28,23 +25,14 @@ create table distribucija (
     mjesto varchar(50),
     vrijeme datetime,
     kolicina dec,
-    proizvodi int not null
-);
-
-create table vozac_kamiona (
-    sifra int not null primary key auto_increment,
-    naziv_terena varchar(50),
-    osoba int not null,
-    distribucija int not null,
-    smjena varchar(50),
-    radno_vrijeme datetime
+    proizvodi int not null,
+    putnik int not null
 );
 
 create table putnik (
     sifra int not null primary key auto_increment,
     naziv_terena varchar(50),
     osoba int not null,
-    distribucija int not null,
     smjena varchar(50),
     radno_vrijeme datetime
 );
@@ -56,20 +44,19 @@ create table osoba(
     mjesto varchar(50),
     oib char (11),
     datum_rodenja datetime,
-    vozac_kamiona int not null,
     putnik int not null
 );
 
-alter table osoba add foreign key (vozac_kamiona) references vozac_kamiona (sifra);
+
 alter table osoba add foreign key (putnik) references putnik (sifra);
 
-alter table vozac_kamiona add foreign key (distribucija) references distribucija (sifra);
-alter table putnik add foreign key (distribucija) references distribucija (sifra);
+alter table distribucija  add foreign key (putnik) references putnik (sifra);
 
 alter table distribucija add foreign key (proizvodi)
 references proizvodi (sifra);
 
 alter table proizvodi add foreign key (poslovnica) references poslovnica (sifra);
+
 
 
 
