@@ -49,7 +49,7 @@ alter table distribucija add foreign key (proizvod)
 references proizvod (sifra);
 
 alter table proizvod add foreign key (poslovnica) references poslovnica (sifra);
-
+assa
 
 
 
