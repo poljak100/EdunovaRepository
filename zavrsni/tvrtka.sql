@@ -53,3 +53,4 @@ alter table proizvod add foreign key (poslovnica) references poslovnica (sifra);
 
 
 
+
