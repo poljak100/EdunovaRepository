@@ -4,6 +4,7 @@ drop database if exists tvrtka;
 create database tvrtka default charset utf8mb4;
 use tvrtka;
 
+
 create table poslovnica (
     sifra int not null primary key auto_increment,
     naziv varchar(50) not null,
@@ -11,7 +12,7 @@ create table poslovnica (
     email varchar(50)
 );
 
-create table proizvodi (
+create table proizvod (
     sifra int not null primary key auto_increment,
     naziv_proizvoda varchar(50) not null,
     rok_trajanja datetime ,
@@ -25,37 +26,29 @@ create table distribucija (
     mjesto varchar(50),
     vrijeme datetime,
     kolicina dec,
-    proizvodi int not null,
+    proizvod int not null,
     putnik int not null
 );
 
 create table putnik (
-    sifra int not null primary key auto_increment,
-    naziv_terena varchar(50),
-    osoba int not null,
-    smjena varchar(50),
-    radno_vrijeme datetime
-);
-
-create table osoba(
     sifra int not null primary key auto_increment,
     ime varchar(50) not null,
     prezime varchar(50) not null,
     mjesto varchar(50),
     oib char (11),
     datum_rodenja datetime,
-    putnik int not null
+    naziv_terena varchar(50),
+    smjena varchar(50),
+    radno_vrijeme datetime
 );
 
 
-alter table osoba add foreign key (putnik) references putnik (sifra);
-
 alter table distribucija  add foreign key (putnik) references putnik (sifra);
 
-alter table distribucija add foreign key (proizvodi)
-references proizvodi (sifra);
+alter table distribucija add foreign key (proizvod)
+references proizvod (sifra);
 
-alter table proizvodi add foreign key (poslovnica) references poslovnica (sifra);
+alter table proizvod add foreign key (poslovnica) references poslovnica (sifra);
 
 
 
