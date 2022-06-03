@@ -147,3 +147,4 @@ on e.sifra = f.neprijatelj
 
 
 
+
