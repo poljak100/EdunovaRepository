@@ -26,7 +26,6 @@ create table distribucija (
     mjesto varchar(50),
     vrijeme datetime,
     kolicina dec,
-    proizvod int not null,
     putnik int not null
 );
 
@@ -42,14 +41,19 @@ create table putnik (
     radno_vrijeme datetime
 );
 
+create table proizvod_distribucija(
+    sifra int not null primary key auto_increment,
+    proizvod int not null,
+    distribucija int not null
+);
+
 
 alter table distribucija  add foreign key (putnik) references putnik (sifra);
-
-alter table distribucija add foreign key (proizvod)
-references proizvod (sifra);
-
 alter table proizvod add foreign key (poslovnica) references poslovnica (sifra);
-assa
+
+alter table proizvod_distribucija add foreign key (proizvod) references proizvod (sifra);
+alter table proizvod_distribucija add foreign key (distribucija) references distribucija (sifra);
+
 
 
 
