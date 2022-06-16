@@ -51,7 +51,7 @@ do {
 
 function registeruser()
 {
-    echo 'user';
+    // echo 'user';
 }
 
 registeruser();
