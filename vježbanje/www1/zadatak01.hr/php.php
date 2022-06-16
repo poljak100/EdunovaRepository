@@ -20,6 +20,7 @@ $hex = [
 ];
 
 //echo $hex['blue'];
+//komentar
 
 $person = [
     'frist_name' => 'Dino',
@@ -28,3 +29,29 @@ $person = [
 ];
 
 //echo $person['frist_name'];
+
+//$age = 20;
+//if ($age >= 18) {
+// echo 'you are old';
+//}
+
+$x = 1;
+while ($x <= 15) {
+    // echo 'Number' . $x . '<br>';
+    $x++;
+}
+
+
+$x = 1;
+do {
+    // echo 'number' . $x . '<br>';
+    $x++;
+} while ($x <= 5);
+
+
+function registeruser()
+{
+    echo 'user';
+}
+
+registeruser();
