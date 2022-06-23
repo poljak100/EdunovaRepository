@@ -1,9 +1,9 @@
 <!-- Start podnožje -->
 <div class="grid-x">
-      <div class="cell">
-        <div class="callout">
-          &copy; Edunova 2022
-        </div>
-      </div>
+  <div class="cell">
+    <div class="callout">
+      &copy; Edunova 2022
     </div>
-    <!-- End podnožje -->
+  </div>
+</div>
+<!-- End podnožje -->
