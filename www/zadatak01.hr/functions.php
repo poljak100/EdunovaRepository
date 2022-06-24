@@ -1,12 +1,14 @@
 <?php
+// Defining function
 function whatIsToday()
 {
-    echo "Today is" . date('l', (1));
+    echo "Today is " . date('l', mktime(1));
 }
-whatIsToday();
-?>
+// Calling function
+whatIsToday(); ?>
 
-<hr>
+
+
 <?php
 // Defining function
 function getSum($num1, $num2)
@@ -17,4 +19,18 @@ function getSum($num1, $num2)
 
 // Calling function
 getSum(10, 20);
+?>
+
+
+<?php
+// Defining function
+function customFont($font, $size = 1.5)
+{
+    echo "<p style=\"font-family: $font; font-size: {$size}em;\">Hello, world!</p>";
+}
+
+// Calling function
+customFont("Arial", 2);
+customFont("Times", 3);
+customFont("Courier");
 ?>

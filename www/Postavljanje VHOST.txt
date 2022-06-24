@@ -35,3 +35,4 @@ i mora se javiti sadržaj iz direktorija C:/Users/dell/Documents/EdunovaPP25/WWW
 
 ZADATAK:
 Kreitari domenu zadatak1.hr
+http://helloworld.hr/zadatak02.php?name=p&tekst=Osijek
