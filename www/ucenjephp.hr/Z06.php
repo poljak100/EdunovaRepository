@@ -1,6 +1,10 @@
 <?php
+$i = $_GET['i'];
 
-
-// Stranica prima cijeli broj.
-// ako je broj paran boja stranice treba biti zelena
-// inače treba biti crvena
+if (isset($_GET['i'])) {
+    if ($i % 2 === 0) {
+        echo '<body style="background-color: green">';
+    } else if ($i % 2 === 1) {
+        echo '<div style=\'background-color: red;\'>Lorem ipsum</div>';
+    }
+} else echo '<b>Unesi parametar!</b>';

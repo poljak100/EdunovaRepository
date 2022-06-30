@@ -10,10 +10,6 @@
 
 <body>
     <main>
-        <div class="gornji tekst">
-            <h1>Umnozak</h1>
-        </div>
-
         <?php
         $a = $_GET['a'];
         $b = $_GET['b'];
@@ -33,18 +29,10 @@
 
         <p>rezultat je:</p> <u> <?php echo $rezultat; ?> </u>
 
-    </main>
 
+
+
+    </main>
 </body>
 
 </html>
-
-<?php
-echo '
-<pre>';
-print_r($_SERVER);
-echo '</pre>';
-
-echo $_SERVER['HTTP_HOST'], '
-<hr />';
-?>

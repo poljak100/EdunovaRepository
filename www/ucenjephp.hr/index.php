@@ -12,7 +12,7 @@
     <div class="grid-x grid-margin-x" id="tijelo">
       <div class="cell">
         <div class="callout">
-          Samo izbornik
+          Koristite gornji izbornik
         </div>
       </div>
     </div>

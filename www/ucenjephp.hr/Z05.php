@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -13,3 +14,29 @@
 
 // ulaz: -1 0 -1
 // izlaz: 0
+
+
+$i = array(3, 8, 92);
+$y = $i[0];
+$z = $y;
+
+for ($x = 1; $x < count($i); $x++) {
+    if ($i[$x] > $y) {
+        $z = $i[$x];
+    }
+}
+
+echo "Najveci broj $z!";
+
+?>
+<?php
+$i = array(3, 3, 2);
+$y = $i[0];
+$z = $y;
+for ($x = 1; $x < count($i); $x++) {
+    if ($i[$x] > $y) {
+        $z = $i[$x];
+    }
+}
+echo "najveci broj $z!";
+?>

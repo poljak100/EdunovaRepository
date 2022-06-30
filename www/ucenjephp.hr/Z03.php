@@ -1,6 +1,12 @@
+
 <?php
+$i = $_GET['i'];
 
-
-// Stranica prima 4 parametara i ispisuje ih jedno 
-// pored drugom svaki u svom panelu (callout)
-// na large širini
+if (isset($_GET['i'])) {
+    if ($i % 2 === 0) {
+        echo '<div style=\'background-color: green;\'>Lorem ipus</div>';
+    } else if ($i % 2 === 1) {
+        echo '<div style=\'background-color: red;\'>Lorem ipsum</div>';
+    }
+} else echo '<b>Unesi parametar!</b>';
+?>
