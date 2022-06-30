@@ -48,9 +48,9 @@
 
                         <div class="grid-x grid-margin-x">
                             <div class="cell large-6 medium-6">
-                                <input class="success button expanded" type="submit" value="Izračunaj">
+                                <input class="popravi" type="submit" value="Izračunaj">
                             </div>
-                            <div class="cell large-6 medium-6">
+                            <div class="cell medium-6 medium-6">
                                 <a class="alert button expanded" href="vizualniProgram1.php">RESET</a>
                             </div>
                         </div>
