@@ -1,34 +1,35 @@
-<?php 
+<?php
 $ime = isset($_GET['ime']) ? $_GET['ime'] : '';
 ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
-    <?php require_once 'zaglavlje.php'; ?>
-  </head>
+
+<head>
+  <?php require_once 'zaglavlje.php'; ?>
+</head>
+
 <body>
-    <div class="grid-container">
+  <div class="grid-container">
     <?php include_once 'izbornik.php'; ?>
     <!-- Start tijelo -->
     <div class="grid-x grid-margin-x" id="tijelo">
       <div class="cell">
         <div class="callout">
-          
+
 
           <form action="" method="get">
             <!-- najbolja praksa -->
             <label for="ime">Ime</label>
-            <input type="text" id="ime" name="ime"
-            value="<?=$ime?>" />
+            <input type="text" id="ime" name="ime" value="<?= $ime ?>" />
 
             <!-- Foundation praksa -->
             <label>Iznos
-              <input type="number" name="iznos"  />
-              <?php 
+              <input type="number" name="iznos" />
+              <?php
               // ovo nećemo raditi
               //value="<?php echo $_GET['iznos'];? >"
-              
-              ?> 
+
+              ?>
             </label>
 
             <label for="boja">Boja</label>
@@ -39,40 +40,34 @@ $ime = isset($_GET['ime']) ? $_GET['ime'] : '';
 
             <label for="vrijeme">Vrijeme</label>
             <input type="datetime-local" id="vrijeme" name="vrijeme" />
-          
-           
-            <input 
-            placeholder="ivan.horvat@tvrtka.hr"
-            type="email" id="email" name="email" />
-        
+
+
+            <input placeholder="ivan.horvat@tvrtka.hr" type="email" id="email" name="email" />
+
             <label for="lozinka">Lozinka</label>
-            <input
-            required 
-            type="password" id="lozinka" name="lozinka" />
-          
-          
+            <input required type="password" id="lozinka" name="lozinka" />
+
+
 
             <!-- odabiri -->
             <p>Jednostruki odabir</p>
-            <input type="radio" id="ljeto" name="gd" value="1" 
-            checked="checked"
-            />
+            <input type="radio" id="ljeto" name="gd" value="1" checked="checked" />
             <label for="ljeto">ljeto</label><br />
-            
+
             <input type="radio" id="zima" name="gd" value="2" />
             <label for="zima">zima</label>
-            
+
             <p>Jednostruki odabir 2</p>
             <input type="radio" id="ljeto1" name="gd1" value="1" />
             <label for="ljeto1">ljeto</label><br />
-            
+
             <input type="radio" id="zima1" name="gd1" value="2" />
             <label for="zima1">zima</label>
 
             <p>Višestruki odabir</p>
             <input type="checkbox" id="proljece" name="vo[]" value="1" />
             <label for="proljece">proljece</label><br />
-            
+
             <input type="checkbox" id="jesen" name="vo[]" value="2" />
             <label for="jesen">jesen</label>
 
@@ -85,17 +80,17 @@ $ime = isset($_GET['ime']) ? $_GET['ime'] : '';
 
             <label for="opis">Opis</label>
             <textarea name="opis" id="opis" cols="30" rows="5"></textarea>
-            
+
             <hr />
-            
-          
-            
+
+
+
             <input type="submit" value="Predaj">
-          
+
           </form>
 
           <pre>
-            <?php 
+            <?php
             var_dump($_GET);
 
             ?>
@@ -106,10 +101,11 @@ $ime = isset($_GET['ime']) ? $_GET['ime'] : '';
       </div>
     </div>
     <!-- End tijelo -->
-    <?php 
+    <?php
     // čitati https://www.tutorialrepublic.com/php-tutorial/php-include-files.php
     require_once 'podnozje.php'; ?>
-    </div>
-    <?php require_once 'jsskripte.php'; ?>
-  </body>
+  </div>
+  <?php require_once 'jsskripte.php'; ?>
+</body>
+
 </html>

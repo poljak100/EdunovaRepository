@@ -1,0 +1,8 @@
+Where dio se sastoji od uvjeta za pretraţivanje (filtriranje podataka). Filtriranje se izvodi na 
+osnovu jedne ili više kolona. Za filtriranje se koriste sljedeći operatori:
+1. Operatori usporeĎivanja
+=, !=, <, >, <=, >= 
+2. Logički operatori
+and, or, not
+3. Ostali operatori
+like, in, between, is null, is not null
