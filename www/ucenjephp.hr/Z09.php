@@ -6,22 +6,22 @@
 // DZ: Napraviti da radi za bilo koja dva unesena broja
 //     Putem GET metode
 
-echo '<table border="2" >';
-for ($i = 0; $i < 3; $i++) {
+echo '<table border="1">';
+for($i=0;$i<3;$i++){
     echo '<tr>';
-    for ($j = 0; $j < 3; $j++) {
+    for($j=0;$j<3;$j++){
         echo '<td>';
-        if (
-            ($i === 0 && $j === 0)
-            or
-            ($i === 0 && $j === 2)
-            or
-            ($i === 2 && $j === 0)
-            or
-            ($i === 2 && $j === 2)
-        ) {
-            echo '*';
-        } else {
+        if(
+            ($i===0 && $j===0)
+            ||
+            ($i===0 && $j===2)
+            ||
+            ($i===2 && $j===0)
+            ||
+            ($i===2 && $j===2)
+        ){
+            echo 'X';
+        }else{
             echo '&nbsp;';
         }
         echo '</td>';

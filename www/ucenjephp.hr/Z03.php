@@ -1,35 +1,6 @@
 <?php
 
-// Program ispisuje zbroj svih vrijednosti
-// primljenih GET parametara
 
-$suma = 0;
-
-foreach ($_GET as $vrijednost) {
-    // echo $vrijednost, '<br />';
-    $vrijednost = (int) $vrijednost;
-    echo $vrijednost, '<br />';
-
-    $suma += $vrijednost;
-}
-
-echo $suma;
-
-
-//Ispisati umnožak
-
-$umnozak = 1;
-foreach ($_GET as $vrijednost) {
-    echo $vrijednost, '<br />';
-    if ($vrijednost === '0') {
-        $umnozak = 0;
-        break;
-    }
-    $vrijednost = (int)($vrijednost);
-    if ($vrijednost === 0) {
-        continue;
-    }
-    $umnozak *= $vrijednost;
-}
-
-echo $umnozak;
+// Stranica prima 4 parametara i ispisuje ih jedno 
+// pored drugom svaki u svom panelu (callout)
+// na large širini
