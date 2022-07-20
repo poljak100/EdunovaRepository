@@ -1,7 +1,7 @@
         <div class="callout">
             <div class="gornji-tekst">
                 <h3>
-                    ZADATAK 5: Stranica prima 3 GET parametra (x, b, z) koji su cijeli brojevi
+                    ZADATAK 5: Stranica prima 3 GET parametra (a, b, c) koji su cijeli brojevi
                     te ispisuje najveći primljeni broj
                 </h3>
             </div>
