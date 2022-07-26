@@ -1,21 +1,35 @@
-<?php
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
 
-// Ispišite sve parne brojeve između
-// dva primljena broja putem GET metode
-// ulaz ?x=26&y=3
-// ulaz ?x=3&y=26
-// izlaz mora biti
-/*
-4
-6
-8
-10
-12
-14
-16
-18
-20
-22
-24
-26
-*/
+<head>
+    <?php require_once 'zaglavlje.php'; ?>
+</head>
+
+<body>
+    <div class="callout">
+        <div class="gornji-tekst">
+            <h4>
+
+            </h4>
+        </div>
+    </div>
+    <div class="callout" id="izlaz">
+        <div class="grid-container fluid">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-4">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End tijelo -->
+    <?php
+
+    require_once 'podnozje.php'; ?>
+    </div>
+    <?php require_once 'jsskripte.php'; ?>
+</body>
+
+</html>
